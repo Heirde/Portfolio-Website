@@ -1,0 +1,144 @@
+body{
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+}
+
+:root{
+    --background-color: #F7F7F5;
+    --main-text-color: #222222;
+    --muted: #6B6B6B;
+    --borders: #E0E0E0;
+    --link-button: #C2410C;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--borders);
+}
+
+.nav-link{
+    display: flex;
+    display: inline-block;
+    margin-right: 1.5rem;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: var(--muted);
+}
+
+/* Website Example Styles */
+.website-example{
+    position: relative;
+    width: 60%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.25rem;
+    background-color: #ffffff;
+    border: 1px solid var(--borders);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.website-example .website-link{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.website-example:hover .website-link{
+    opacity: 1;
+}
+
+.website-example:hover{
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+.website-example::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--muted);
+    opacity: 0;
+    border-radius: 12px;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.website-example:hover::before{
+    opacity: 0.4;
+}
+
+.video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.website-link{
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--link-button);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: var(--background-color);
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.website-link:hover{
+    box-shadow: 0 0px 20px #C2410C;
+}
+
+.website-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.website-example-grid:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+.website-example-grid{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 1000px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.website-example-grid::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--muted);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.website-example-grid:hover::after{
+    opacity: 0.4;
+}
+
+.website-example-grid .website-link{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.website-example-grid:hover .website-link{
+    opacity: 1;
+}
