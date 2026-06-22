@@ -10,43 +10,55 @@
 <body>
     
     <nav>
-        <a href="pages/index.html" class="nav-link">Home</a>
-        <a href="pages/about.html" class="nav-link">About</a>
-        <a href="pages/projects.html" class="nav-link">Projects</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
     </nav>
 
-   <div class="website-example">
-        <video class="website video" autoplay loop muted playsinline>
-            <source src="Videos/umbrella-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <a href="https://heirde.github.io/Umbrella-Corporation-Project-Firebase/" alt="umbrella" class="website-link" target="_blank">Visit Website</a>
+    <!-- Background project info text -->
+    <div class="project-info-bg">
+        <div class="project-info-content">
+            <h2 class="info-title"></h2>
+            <p class="info-date"></p>
+            <p class="info-client"></p>
+        </div>
     </div>
 
-    <div class="website-grid">
-    <div class="website-example-grid">
-        <video class="website video" autoplay loop muted playsinline>
-            <source src="Videos/umbrella-signin.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <a href="https://heirde.github.io/Umbrella-Corporation-Project-Firebase/" alt="umbrella-signin" class="website-link" target="_blank">Visit Website</a>
+    <div class="umbrella-section">
+        <div class="website-example"
+             data-title="Umbrella Corporation"
+             data-date="March 2024"
+             data-client="Made for: Umbrella Corporation">
+            <div class="video-wrapper">
+                <video class="video" autoplay loop muted playsinline>
+                    <source src="Videos/umbrella-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <a href="https://heirde.github.io/Umbrella-Corporation-Project-Firebase/" class="website-link" target="_blank">Visit Website</a>
+        </div>
     </div>
 
-    <div class="website-example-grid">
-        <video class="website video" autoplay loop muted playsinline>
-            <source src="Videos/umbrella-signup.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <a href="https://heirde.github.io/Umbrella-Corporation-Project-Firebase/" alt="umbrella-signup" class="website-link" target="_blank">Visit Website</a>
-    </div>
-
+    <div class="whoiam-section">
+        <div class="website-example"
+             data-title="Heirde's Chill Room"
+             data-date="June 2024"
+             data-client="Personal Project">
+            <div class="video-wrapper">
+                <video class="video" autoplay loop muted playsinline>
+                    <source src="Videos/whoiam.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <a href="https://heirde.github.io/WhoIAm/" class="website-link" target="_blank">Visit Website</a>
+        </div>
     </div>
 
     <footer>
 
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
